@@ -58,3 +58,5 @@ BST.insert(90);
 BST.insert(67);
 
 var root = BST.getRootNode();
+
+BST.leftView(root);
