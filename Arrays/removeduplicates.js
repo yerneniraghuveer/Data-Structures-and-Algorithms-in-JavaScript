@@ -13,4 +13,5 @@ const removeDuplicates = (arr) => {
         }      
     });
     return Object.keys(uniqueItems);
+    return Object.keys(map).join(''); // for string
 }

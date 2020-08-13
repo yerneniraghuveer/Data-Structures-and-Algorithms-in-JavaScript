@@ -13,5 +13,5 @@ const isPalindrome = (text) => {
 
 const isPalindrome1 = (text) => {
     
-    return text.split('').reverse().join('') === text
+    return text.split('').reverse().join('') === text;
 } 
