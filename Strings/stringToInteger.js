@@ -1,26 +1,33 @@
 // string to integer
+function atoi(str){
+    let result = 0;
+    let sign = 1;
 
-function stringToInteger(str){
-    return parseInt(str);
-}
+    for(let i = 0; i < str.length; i++){
+        if(str[0] === '-'){
+            sign = -1;
+        }
 
-stringToInteger('-756')
+        if(!isNaN(str[i])){
+            result = 10 * result + (str[i] - '0');
+        }
+    }
 
-function integerToString(integer){
-    return (integer).toString();
-}
-
-integerToString(-756);
-
-function reverseString(text) {
-    return [...text].reduce((acc, char) => char + acc , '')
+    return result * sign
     
 }
-function integerReversal(num){
+  
+atoi("-777")
 
-    let reverseNumber = parseInt(reverseString(num.toString()));
+//JS inbuilt
+// function stringToInteger(str){
+//     return parseInt(str);
+// }
 
-    return reverseNumber * Math.sign(num)
-}
+//stringToInteger('-756')
 
-integerReversal(-876)
+// function integerToString(integer){
+//     return (integer).toString();
+// }
+
+// integerToString(-756);
