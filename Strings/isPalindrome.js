@@ -3,12 +3,11 @@
 //check by only half the length of the text
 const isPalindrome = (text) => {
     for(let i = 0; i < text.length/2; i++){
-        if(text[i] !== text[twxt.length - 1 - i]){
+        if(text[i] !== text[text.length - 1 - i]){
             return false
-        } else {
-            return true;
-        }
+        } 
     }
+    return true;
 }
 
 const isPalindrome1 = (text) => {

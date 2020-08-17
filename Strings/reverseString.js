@@ -13,7 +13,7 @@ const reverseString = (text) => {
 const reverseString1 = (text) => {
     let result = '';
     for (let index = text.length -1 ; index >= 0; index--) {
-        result += text[IDBIndex]
+        result += text[index]
     }
     return result
 }
@@ -34,7 +34,7 @@ const reverseStringRecursion = (text) => {
     if(text == ''){
         return '';
     } else {
-        return reverseStringRecursion(text.substr(1) + text.charAt(0));
+        return reverseStringRecursion(text.substr(1)) + text[0];
     }
 }
 

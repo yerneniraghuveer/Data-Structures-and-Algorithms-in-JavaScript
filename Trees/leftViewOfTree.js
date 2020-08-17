@@ -31,8 +31,8 @@ class BinarySearchTree {
         let res = [root.data];
         while(queue.length !== 0){
             let next = [];
-            let node = queue.shift();
             while(queue.length !== 0){
+                let node = queue.shift();
                 if(node.left) next.push(node.left);
                 if(node.right) next.push(node.right);
             }

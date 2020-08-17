@@ -30,13 +30,13 @@ LinkedList.prototype.print = function(){
 }
 
 var list = new LinkedList();
-list.insertAtTail(1);
-list.insertAtTail(2);
-list.insertAtTail(3);
-list.insertAtTail(4);
-list.insertAtTail(5);
+list.insertAtBeginning(1);
+list.insertAtBeginning(2);
+list.insertAtBeginning(3);
+list.insertAtBeginning(4);
+list.insertAtBeginning(5);
 
-list.print()
+list.print();
 // list.search(1)
 
 
