@@ -11,7 +11,7 @@ const findSecondMaximum = (arr) => {
     }
 
     for(let value of arr){
-        if((item < max) && (item > secondMax)){
+        if((value < max) && (value > secondMax)){
             secondMax = value;
         }
     }

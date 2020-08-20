@@ -29,6 +29,6 @@ const findMaximumWindowSum = (arr, k) => {
     return maximumSum
 }
 
-// findMaximumWindowSum1([100,200,300,400],2);
+findMaximumWindowSum1([100,200,300,400],2);
 
 

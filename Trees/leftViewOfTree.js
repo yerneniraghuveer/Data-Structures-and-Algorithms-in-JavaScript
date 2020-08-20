@@ -37,7 +37,7 @@ class BinarySearchTree {
                 if(node.right) next.push(node.right);
             }
             if(next[0]) res.push(next[0].data)
-            queue = node;
+            queue = next;
         }
         return res;
     }
